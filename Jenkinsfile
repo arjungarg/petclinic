@@ -1,5 +1,4 @@
 number= sh 'cat /var/lib/jenkins/jobs/EYpipeline/nextBuildNumber'
-Test="${BUILD_NUMBER}"
 pipeline {
 	agent any
     stages {
@@ -10,7 +9,7 @@ pipeline {
 		        sh 'ls -ltr'
                         sh 'pwd'
 		        sh 'cat /var/lib/jenkins/jobs/EYpipeline/nextBuildNumber'
-                        sh '/usr/local/bin/helm upgrade --install ey-app petclinic --set image.repository=rajat6969/eycloud  --set image.tag=8'
+                        sh '/usr/local/bin/helm upgrade --install ey-app petclinic --set image.repository=rajat6969/eycloud  --set image.tag=number'
 
             }           
         }
