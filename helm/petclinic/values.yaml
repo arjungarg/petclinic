@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: initsixcloud/petclinic
-  tag: "${env.BUILD_NUMBER}"
+  tag: env.BUILD_NUMBER
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
