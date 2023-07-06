@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: rajat6969/eycloud
-  tag: 4
+  repository: initsixcloud/petclinic
+  tag: latest
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
