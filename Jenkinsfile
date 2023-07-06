@@ -8,7 +8,7 @@ pipeline {
 		        sh 'ls -ltr'
                         sh 'pwd'
 		        sh 'cat /var/lib/jenkins/jobs/EYpipeline/nextBuildNumber'
-                        sh '/usr/local/bin/helm upgrade --install ey-app petclinic --set image.repository=rajat6969/eycloud  --set image.tag=$/var/lib/jenkins/jobs/EYpipeline/nextBuildNumber'
+                        sh '/usr/local/bin/helm upgrade --install ey-app petclinic --set image.repository=rajat6969/eycloud  --set image.tag=9'
 
             }           
         }
