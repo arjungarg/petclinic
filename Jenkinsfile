@@ -1,3 +1,4 @@
+number= sh 'cat /var/lib/jenkins/jobs/EYpipeline/nextBuildNumber'
 Test="${BUILD_NUMBER}"
 pipeline {
 	agent any
