@@ -8,7 +8,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install ey-app petclinic --set image.repository=rajat6969/eycloud --set image.tag=8'
+                        sh '/usr/local/bin/helm upgrade --install ey-app petclinic --set image.repository=rajat6969/eycloud'
             }           
         }
     }
