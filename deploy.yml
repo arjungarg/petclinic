@@ -3,6 +3,4 @@
   
   tasks: 
     - name: deploy inti esk cluster
-      command: helm upgrade --install ey-app /var/lib/jenkins/workspace/EYCDJOB/petclinic --set image.repository=rajat6969/eycloud  --set image.tag=50
-      
-  
+      command: helm upgrade --install ey-app /var/lib/jenkins/workspace/EYCDJOB/petclinic --set image.repository=rajat6969/eycloud  --set image.tag=cat /var/lib/jenkins/jobs/EYCDJOB/nextBuildNumber
