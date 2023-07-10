@@ -8,7 +8,7 @@ pipeline {
 		        sh 'ls -ltr'
                         sh 'pwd'
 		        sh 'cd petclinic'
-		        yq -i '.image.repository = "test"' values.yaml
+		        yq '-i '.image.repository = "test"' values.yaml'
 		        
                         sh 'ansible-playbook deploy.yml'
 
