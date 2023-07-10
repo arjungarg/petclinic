@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh 'ansible-playbook deploy.yml --set image.tag=$BUILD_NUMBER'
+                        sh 'ansible-playbook deploy.yml'
 
             }           
         }
