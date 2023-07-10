@@ -1,0 +1,8 @@
+---
+- hosts: test
+  become: yes
+  tasks: 
+    - name: deploy inti esk cluster
+      command: helm upgrade --install ey-app petclinic --set image.repository=rajat6969/eycloud  --set image.tag=$BUILD_NUMBER
+      
+  
