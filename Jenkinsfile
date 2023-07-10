@@ -7,8 +7,8 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-		        sh ' cd petclinic'
-		        sh ' yq -i '.image.repository = "test"' values.yaml'
+		        sh 'cd petclinic'
+		        sh 'yq -i '.image.repository = "test"' values.yaml'
 		        
                         sh 'ansible-playbook deploy.yml'
 
