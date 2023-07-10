@@ -7,11 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-		        sh 'cd petclinic'
-		        sh ' vi values.yaml'
-		        sh '--set image.repository = $BUILD_NUMBER'
-		        sh ':wq!'
-                        sh 'ansible-playbook deploy.yml'
+                        sh 'ansible-playbook deploy.yml --set image.tag=$BUILD_NUMBER'
 
             }           
         }
